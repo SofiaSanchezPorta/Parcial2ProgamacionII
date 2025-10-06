@@ -1,3 +1,5 @@
+#DEFINICIÓN FUNCIÓN PTHON CON CONMPLEJIDAD O(n) QUE CUENTE EL NÚMERO DE ELEMENTOS PARES DE UNA LISTA
+
 def cantPares(lista: list):
     cont = 0
     for e in lista:

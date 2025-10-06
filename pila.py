@@ -1,3 +1,5 @@
+#DEFINICIÓN CLASE PILA
+
 class Pila:
 
     def __init__(self):
@@ -25,7 +27,10 @@ class Pila:
     def __str__(self):
         return f"Pila con {self.size()} elementos.\
               Contenido: {self.contenido}"
-    
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+#PUREBAS
+
 pila = Pila()
 pila.insertar(3)
 pila.insertar(90)
@@ -46,6 +51,9 @@ pila.quitar()
 print(f"Tamaño pila: {pila.size()}")
 print(f"¿Está vacía? {pila.esta_vacia()}")
 
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+#DEFINICIÓN FUNCIÓN PARA INVERTIR UNA LISTA
+
 def invertir_lista(lista:list):
     pila = Pila()
     lista_invertida = []
@@ -62,6 +70,8 @@ print(invertir_lista([1, 2, 3]))
 print(invertir_lista(["Primero", 18, 52, 453, "Chau"]))
 
 
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+#DEFINICIÓN FUNCIÓN PARA VER SI UNA EXPRESIÓN ESTÁ BALANCEADA
 
 def expresion_balanceda_dif_llaves(expresion: str) -> bool:
     parejas = {")": "(", "]": "[", "}": "{"}

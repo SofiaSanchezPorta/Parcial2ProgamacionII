@@ -1,3 +1,5 @@
+#DEFINICIÓN CLASE COLA
+
 class Cola:
 
     def __init__(self):
